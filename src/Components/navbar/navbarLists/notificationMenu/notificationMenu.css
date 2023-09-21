@@ -1,0 +1,36 @@
+/* style for info list  */
+.notification_list{
+	position: absolute;
+	right: 0;
+	top: 65px;
+	z-index: 1111111111;
+	background-color: #fff;
+	padding: 10px 20px;
+	width: 200px;
+	border-radius: 10px;
+	max-height: 500px;
+	overflow-y:auto ;
+	list-style-type: none;
+	transition: 0.5s ease;
+}
+.notification_list.active_personal_data{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.notification_list.inactive_personal_data{
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-20px);
+}
+.notification_list li{
+	padding: 5px 10px;
+	transition: 0.3s;
+	border-radius: 10px;
+    color: var(--main-color);
+}
+.notification_list li:hover{
+	background-color: var(--second-color) !important;
+	color: #fff;
+}
+/*end style for info list  */

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --main-color : #006E66;
+  --second-color : #F0A40B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 !important;
+}
+.next_button{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: .3s;
+}
+.next_button:hover{
+  background-color: var(--second-color);
+}

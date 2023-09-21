@@ -1,0 +1,27 @@
+.openMenu{
+    position: absolute;
+    top: 57px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    right: 10px;
+    transform: translateY(0);
+    transition: .3s;
+}
+.closeMenu{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-20px);
+}
+.logo{
+    width: 75px;
+    height: 75px;
+}
+@media(max-width : 600px){
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+}
